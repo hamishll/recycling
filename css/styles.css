@@ -12,7 +12,7 @@ body {
   overflow: hidden;
 }
 .demo {
-  width: 95%;
+  width: 100%;
   max-width: 1000px;
   /* background: white; */
 }
@@ -37,8 +37,9 @@ body {
 }
 .demo__card-cont {
   position: relative;
-  width: 24rem;
-  height: 32rem;
+  width: 90%;
+  max-width: 30rem;
+  height: 40rem;
   margin: 0 auto 5rem;
 }
 .demo__card {
@@ -52,6 +53,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.02);
+  background: white;
 }
 .demo__card.reset {
   transition: transform 0.3s;
@@ -112,13 +114,14 @@ body {
   color: #333;
 }
 .demo__card__btm {
-  height: 11.5rem;
+  height: 100%;
+  padding: 2em;
   background: rgb(230, 230, 230);
 }
 .demo__card__text {
   text-align: center;
-  font-size: 2.2rem;
-  line-height: 11.5rem;
+  font-size: 1.5rem;
+  /* line-height: 11.5rem; */
 }
 .demo__card__choice {
   position: absolute;

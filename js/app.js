@@ -37,8 +37,16 @@ function shuffle(array) {
     return array;
 }
 
+let last_card = `
+    <div class="demo__card">
+        <div class="demo__card__top bg">Congratulations! You've finished!<p role="img" aria-label="celebration" style="font-size: 5em">&#x1F389</p>
+        <button onclick="resetGame()">Play again!</button>
+        </div>
+    </div>
+`
+
 
 data = shuffle(data);
 data.forEach(item => renderCard(item));
-frame.innerHTML = game_html;
+frame.innerHTML = last_card + game_html;
 

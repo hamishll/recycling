@@ -47,8 +47,8 @@ $(document).ready(function() {
         $card.addClass("below").removeClass("inactive to-left to-right");
         cardsCounter++;
         if (cardsCounter === numOfCards) {
-          cardsCounter = 0;
-          $(".demo__card").removeClass("below");
+          // cardsCounter = 0;
+          // $(".demo__card").removeClass("below");
         }
       }, 300);
     }
@@ -95,4 +95,13 @@ $(document).ready(function() {
   });
 
 });
+
+function resetGame() {
+  $(".demo__card").removeClass("below");
+  score = 0;
+  cardsCounter = 0;
+  document.getElementById("score").innerText = "Score: "+score+" / "+(cardsCounter);
+  $(".demo__card__top").css("border-color","#EEE");
+  $(".demo__card__btm").css("opacity","0");
+}
 

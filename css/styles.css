@@ -10,11 +10,13 @@ html, body {
 body {
   background: #b5faaf;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .demo {
   width: 100%;
-  max-width: 1000px;
   /* background: white; */
+  margin-top: 100px;
 }
 .demo__header {
   height: 50px;
@@ -31,7 +33,7 @@ body {
 .demo__content {
   overflow: hidden;
   position: relative;
-  height: 48rem;
+  height: 90vh;
   padding-top: 4.5rem;
   user-select: none;
 }
@@ -39,8 +41,10 @@ body {
   position: relative;
   width: 90%;
   max-width: 30rem;
-  height: 40rem;
+  height: 60rem;
   margin: 0 auto 5rem;
+  display: flex;
+  flex-direction: column;
 }
 .demo__card {
   z-index: 2;
@@ -50,10 +54,10 @@ body {
   width: 100%;
   height: 100%;
   transform-origin: 50% 100%;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.02);
-  background: white;
+
+
+
+  /* background: white; */
 }
 .demo__card.reset {
   transition: transform 0.3s;
@@ -76,36 +80,24 @@ body {
   z-index: 1;
 }
 .demo__card__top {
-  height: 20.5rem;
+  height: 40rem;
   padding-top: 4rem;
   background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.02);
 }
-/* .demo__card__top.purple {
-  background: #7132b9;
-}
-.demo__card__top.blue {
-  background: #248cb6;
-}
-.demo__card__top.indigo {
-  background: #303f9f;
-}
-.demo__card__top.cyan {
-  background: #26c6da;
-}
-.demo__card__top.lime {
-  background: #afb42b;
-}
-.demo__card__top.brown {
-  background: #795548;
-} */
+
 .demo__card__img {
   overflow: hidden;
-  width: 10rem;
-  height: 10rem;
+  width: 100%;
+  height: 30rem;
   margin: 0 auto 1.5rem;
   border-radius: 50%;
   border: 0.5rem solid #fff;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
 }
 .demo__card__name {
   text-align: center;
@@ -116,17 +108,22 @@ body {
 .demo__card__btm {
   height: 100%;
   padding: 2em;
-  background: rgb(230, 230, 230);
+  /* background: rgb(230, 230, 230); */
+  margin-top: 4rem;
+  background: #b5faaf;
+  border-radius: 20px;
 }
 .demo__card__text {
   text-align: center;
   font-size: 1.5rem;
-  /* line-height: 11.5rem; */
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 0;
 }
 .demo__card__choice {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  top: 0;
+  top: 0; */
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -135,35 +132,33 @@ body {
   content: "";
   position: absolute;
   left: 50%;
-  top: 50%;
-  width: 2rem;
-  height: 2rem;
-  margin-left: -1rem;
-  color: #fff;
-  border-radius: 50%;
-  box-shadow: -2rem -3rem #fff, 2rem -3rem #fff;
+  top: 28%;
+  width: 8rem;
+  height: 8rem;
+  margin-left: -4rem;
+  background-image: url(../images/icon-non-recyclable.svg);
+  background-size: 8rem 8rem;
 }
 .demo__card__choice:after {
+  display: none;
   content: "";
   position: absolute;
   left: 50%;
-  top: 50%;
-  width: 4rem;
-  height: 1.5rem;
-  margin-left: -2rem;
-  border: 0.6rem solid #fff;
-  border-bottom: none;
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
+  top: 27%;
+  width: 9rem;
+  height: 9rem;
+  margin-left: -4.5rem;
+  background-image: url(../images/icon-recyclable.svg);
+  background-size: 9rem;
 }
 .demo__card__choice.m--reject {
-  background: #c0c0c0;
+  /* background: #c0c0c0; */
 }
 .demo__card__choice.m--like {
-  background: #76db6d;
+  /* background: #76db6d; */
 }
 .demo__card__choice.m--like:after {
-  transform: scaleY(-1);
+  display: block;
 }
 .demo__card__drag {
   z-index: 5;
@@ -177,4 +172,7 @@ body {
 .demo__tip {
   text-align: center;
   font-size: 2.2rem;
+}
+#score {
+  font-weight: bold;
 }

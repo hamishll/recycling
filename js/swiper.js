@@ -2,11 +2,13 @@ $(document).ready(function() {
 
   var animating = false;
   var cardsCounter = 0;
-  var numOfCards = 6;
+  var numOfCards = data.length;
   var decisionVal = 80;
   var pullDeltaX = 0;
   var deg = 0;
   var $card, $cardReject, $cardLike;
+  var correct = false;
+  var score = 0;
 
   function pullChange() {
     animating = true;
@@ -21,14 +23,22 @@ $(document).ready(function() {
   };
 
   function release() {
-
-    if (pullDeltaX >= decisionVal) {
+    
+    if ( (pullDeltaX >= decisionVal && ($card.attr("recyclable")==="true"))) {
       $card.addClass("to-right");
-    } else if (pullDeltaX <= -decisionVal) {
+      //console.log("Item is recyclable, moving to right");
+      correct = true;
+      score++;
+    } 
+    else if (pullDeltaX <= -decisionVal && ($card.attr("recyclable")==="false")) {
       $card.addClass("to-left");
+      correct = true;
+      score++;
+      //console.log("Item is not recyclable, moving to left");
     }
 
-    if (Math.abs(pullDeltaX) >= decisionVal) {
+    // Math.abs(pullDeltaX) >= decisionVal
+    if (correct) {
       $card.addClass("inactive");
 
       setTimeout(function() {
@@ -40,9 +50,12 @@ $(document).ready(function() {
         }
       }, 300);
     }
+    correct = false;
+    document.getElementById("score").innerText = "Score: "+score+" / "+(cardsCounter+1);
 
-    if (Math.abs(pullDeltaX) < decisionVal) {
+    if (Math.abs(pullDeltaX) < decisionVal || !(correct)) {
       $card.addClass("reset");
+      $card.find('.demo__card__btm').find('.demo__card__text').css("opacity",1);
     }
 
     setTimeout(function() {
@@ -77,3 +90,4 @@ $(document).ready(function() {
   });
 
 });
+

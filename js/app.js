@@ -12,7 +12,7 @@ function renderCard(item) {
             <div class="demo__card__drag"></div>
         </div>
         <div class="demo__card__btm">
-            <p class="demo__card__text">${ item.description } <a href="${item.link}">Find out more here</a></p>
+            <p class="demo__card__text">${ item.description } <a href="${item.link}" target="_blank">Find out more here</a></p>
         </div>
         
     </div>

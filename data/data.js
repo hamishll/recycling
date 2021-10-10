@@ -147,4 +147,41 @@ data = [
     "description":"Not all types of glass melt at the same temperature. Pyrex and drinking glasses for example, melt at a higher temperature than bottles and jars, so if they enter the glass recycling process, they cause problems with the recycling.",
     "link":"https://londonrecycles.co.uk/a-to-z/glass-bottles-jars/"
 },
+{
+    "id":22,
+    "name":"Cleaning Wipes",
+    "recyclable":false,
+    "description":"Baby wipes, makeup wipes, cleaning wipes and moist toilet tissues are not recyclable and shouldn’t be flushed down the toilet either (although some labels say they can be!) You should always throw them in your rubbish bin.",
+    "link":"https://londonrecycles.co.uk/a-to-z/wipes-and-wet-wipes/"
+},
+{
+    "id":23,
+    "name":"Make-up Wipes",
+    "recyclable":false,
+    "description":"Baby wipes, makeup wipes, cleaning wipes and moist toilet tissues are not recyclable and shouldn’t be flushed down the toilet either (although some labels say they can be!) You should always throw them in your rubbish bin.",
+    "link":"https://londonrecycles.co.uk/a-to-z/wipes-and-wet-wipes/"
+},
+{
+    "id":24,
+    "name":"Baby Wipes",
+    "recyclable":false,
+    "description":"Baby wipes, makeup wipes, cleaning wipes and moist toilet tissues are not recyclable and shouldn’t be flushed down the toilet either (although some labels say they can be!) You should always throw them in your rubbish bin.",
+    "link":"https://londonrecycles.co.uk/a-to-z/wipes-and-wet-wipes/"
+},
+{
+    "id":25,
+    "name":"Cardboard Boxes",
+    "recyclable":true,
+    "description":"The main types of cardboard we use at home are corrugated cardboard, which is used for parcels, and cardboard used to package your shopping – like cereal boxes, egg cartons, ready meal sleeves etc. Both types can be recycled but councils sometimes collect them separately.",
+    "link":"https://londonrecycles.co.uk/a-to-z/cardboard/"
+},
+{
+    "id":26,
+    "name":"Egg Boxes",
+    "recyclable":true,
+    "description":"The main types of cardboard we use at home are corrugated cardboard, which is used for parcels, and cardboard used to package your shopping – like cereal boxes, egg cartons, ready meal sleeves etc. Both types can be recycled but councils sometimes collect them separately.",
+    "link":"https://londonrecycles.co.uk/a-to-z/cardboard/"
+},
+
+
 ];

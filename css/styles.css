@@ -9,14 +9,14 @@ html, body {
 }
 body {
   background: #b5faaf;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
 }
 .demo {
   width: 100%;
   /* background: white; */
-  margin-top: 100px;
+  margin-top: 40px;
 }
 .demo__header {
   height: 50px;
@@ -172,6 +172,7 @@ body {
 .demo__tip {
   text-align: center;
   font-size: 2.2rem;
+  margin-bottom: 20px;
 }
 #score {
   font-weight: bold;

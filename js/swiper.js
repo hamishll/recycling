@@ -26,12 +26,14 @@ $(document).ready(function() {
     
     if ( (pullDeltaX >= decisionVal && ($card.attr("recyclable")==="true"))) {
       $card.addClass("to-right");
+      $card.find('.demo__card__top').css("border-color","green");
       //console.log("Item is recyclable, moving to right");
       correct = true;
       score++;
     } 
     else if (pullDeltaX <= -decisionVal && ($card.attr("recyclable")==="false")) {
       $card.addClass("to-left");
+      $card.find('.demo__card__top').css("border-color","green");
       correct = true;
       score++;
       //console.log("Item is not recyclable, moving to left");
@@ -49,6 +51,9 @@ $(document).ready(function() {
           $(".demo__card").removeClass("below");
         }
       }, 300);
+    }
+    if (!(correct) && Math.abs(pullDeltaX) > decisionVal) {
+      $card.find('.demo__card__top').css("border-color","red");
     }
     correct = false;
     document.getElementById("score").innerText = "Score: "+score+" / "+(cardsCounter+1);

@@ -119,4 +119,32 @@ data = [
     "description":"Cotton pads can't be recycled and should go in your rubbish bin. Don't try to flush them either, as cotton wool expands in water and can cause blockages. If you're after a reusable alternative, you can buy reusable make-up remover pads made from fabric. Lots come with wash-bags as well so that you can clean them easily when you next put a clothes load in the washing machine.",
     "link":"https://londonrecycles.co.uk/a-to-z/cotton-pads/"
 },
+{
+    "id":18,
+    "name":"Face Masks",
+    "recyclable":false,
+    "description":"Facemasks, plastic gloves and any sort of PPE (personal protecting equipment) can't be recycled. Throw these in your rubbish bin. To reduce your waste, you could buy or make your own facemasks. There are loads of small London-based businesses that sell handmade, sustainable facemasks made from ethically-sourced materials.",
+    "link":"https://londonrecycles.co.uk/a-to-z/ppe/"
+},
+{
+    "id":19,
+    "name":"Window Envelopes",
+    "recyclable":true,
+    "description":"Window envelopes and tissue boxes can be recycled. You don't need to separate the plastic film from the paper as this will done at the recycling plant.",
+    "link":"https://londonrecycles.co.uk/a-to-z/paper/"
+},
+{
+    "id":20,
+    "name":"Drink Pouches",
+    "recyclable":false,
+    "description":"Food and drink pouches, for things like coffee, pet food and baby food can't be recycled at home. The good news is that some types/brands of pouches are collected by a company called TerraCycle who recycle them to create new products! Their website explains more about their scheme, what they collect and how you can get involved.",
+    "link":"https://londonrecycles.co.uk/a-to-z/food-drink-pouches/"
+},
+{
+    "id":21,
+    "name":"Drinking Glasses",
+    "recyclable":false,
+    "description":"Not all types of glass melt at the same temperature. Pyrex and drinking glasses for example, melt at a higher temperature than bottles and jars, so if they enter the glass recycling process, they cause problems with the recycling.",
+    "link":"https://londonrecycles.co.uk/a-to-z/glass-bottles-jars/"
+},
 ];

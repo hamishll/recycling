@@ -8,7 +8,7 @@ html, body {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #b5faaf;
+  background: #dfe6ff;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -108,7 +108,7 @@ body {
   padding: 2em;
   /* background: rgb(230, 230, 230); */
   margin-top: 4rem;
-  background: #b5faaf;
+  background: #dfe6ff;
   border-radius: 20px;
 }
 .demo__card__text {

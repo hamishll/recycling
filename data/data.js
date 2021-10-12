@@ -92,6 +92,13 @@ data = [
     "link":"https://londonrecycles.co.uk/a-to-z/crisp-packets/"
 },
 {
+    "id":13,
+    "name":"Cotton Buds",
+    "recyclable":false,
+    "description":"Cotton pads can't be recycled and should go in your rubbish bin.",
+    "link":"https://londonrecycles.co.uk/a-to-z/cotton-pads/"
+},
+{
     "id":14,
     "name":"Coffee Pods",
     "recyclable":false,
@@ -182,6 +189,26 @@ data = [
     "description":"The main types of cardboard we use at home are corrugated cardboard, which is used for parcels, and cardboard used to package your shopping – like cereal boxes, egg cartons, ready meal sleeves etc. Both types can be recycled but councils sometimes collect them separately.",
     "link":"https://londonrecycles.co.uk/a-to-z/cardboard/"
 },
-
+{
+    "id":28,
+    "name":"Greetings Cards",
+    "recyclable":true,
+    "description":"Paper is one of the most valuable recyclable materials",
+    "link":"https://londonrecycles.co.uk/a-to-z/paper/"
+},
+{
+    "id":29,
+    "name":"Foil Trays",
+    "recyclable":true,
+    "description":" ",
+    "link":"https://londonrecycles.co.uk/a-to-z/paper/"
+},
+{
+    "id":30,
+    "name":"Foil",
+    "recyclable":true,
+    "description":" ",
+    "link":"https://londonrecycles.co.uk/a-to-z/paper/"
+},
 
 ];

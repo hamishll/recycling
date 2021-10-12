@@ -104,4 +104,3 @@ function resetGame() {
   $(".demo__card__top").css("border-color","#EEE");
   $(".demo__card__btm").css("opacity","0");
 }
-

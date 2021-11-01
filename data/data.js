@@ -200,15 +200,106 @@ data = [
     "id":29,
     "name":"Foil Trays",
     "recyclable":true,
-    "description":" ",
-    "link":"https://londonrecycles.co.uk/a-to-z/paper/"
+    "description":"Clean aluminium trays and foil are widely recycled, provided you rinse off any food residue.",
+    "link":"https://londonrecycles.co.uk/a-to-z/aluminium-and-foil/"
 },
 {
     "id":30,
     "name":"Foil",
     "recyclable":true,
-    "description":" ",
-    "link":"https://londonrecycles.co.uk/a-to-z/paper/"
+    "description":"Clean aluminium trays and foil are widely recycled, provided you rinse off any food residue.",
+    "link":"https://londonrecycles.co.uk/a-to-z/aluminium-and-foil/"
+},
+{
+    "id":31,
+    "name":"Bin bags",
+    "recyclable":false,
+    "description":"Most black plastic packaging is coloured using carbon black pigments, which the optical sorting systems in plastics recycling plants can’t pick up. This means anything made out of black plastic usually ends up as residue and is sent to landfill or incinerated instead. It’s best not to buy any black plastic products or anything that comes in black plastic packaging.   Black bin bags can’t be recycled, so don’t put them in your recycling bin. If you put your recycling into a black bag, the bin crews will throw the entire bag into the rubbish, even if you leave the bag open.",
+    "link":"https://londonrecycles.co.uk/a-to-z/black-plastic/"
+},
+{
+    "id":32,
+    "name":"Bubble Wrap",
+    "recyclable":false,
+    "description":"Bubblewrap can’t be recycled at home but you can recycle it with plastic bags at supermarket collection points.",
+    "link":"https://londonrecycles.co.uk/a-to-z/bubblewrap/"
+},
+{
+    "id":33,
+    "name":"Plastic Bags",
+    "recyclable":false,
+    "description":"Generally, plastic film and carrier bags can’t be recycled at home, but some can be recycled at supermarket carrier bag collection points. First, check on the packaging to see if they can be recycled or not.",
+    "link":"https://londonrecycles.co.uk/a-to-z/plastic-bags/"
+},
+{
+    "id":34,
+    "name":"Snack Wrappers",
+    "recyclable":false,
+    "description":"Sweet wrappers should go in your rubbish bin. Although they’re shiny and look like foil, they’re actually made out of metallised plastic film, a material which can’t be recycled yet.",
+    "link":"https://londonrecycles.co.uk/a-to-z/sweet-wrappers/"
+},
+{
+    "id":35,
+    "name":"Tins and Cans",
+    "recyclable":true,
+    "description":"Food tins and drinks cans are made of metal, which is widely recycled.",
+    "link":"https://londonrecycles.co.uk/a-to-z/tins-and-cans/"
+},
+{
+    "id":36,
+    "name":"Fruit Trays",
+    "recyclable":true,
+    "description":"Councils usually collect Pots (e.g. yogurt, soup), Tubs (e.g. margarine, ice cream), Trays or punnets, take-away trays; fruit & veg trays), Chocolate and biscuit tubs and trays, and Brown plastic plant pots.",
+    "link":"https://londonrecycles.co.uk/a-to-z/plastic-pots-and-trays/"
+},
+{
+    "id":37,
+    "name":"Glitter Cards",
+    "recyclable":false,
+    "description":"Everyone loves a bit of glitter, especially at Christmas, but sadly glittery and metallic paper and card can’t be recycled. When it comes to recycling your cards, if you have any with glittery sections, tear these off and only recycle the non-glittery bits.",
+    "link":"https://londonrecycles.co.uk/a-to-z/glitter-cards/"
+},
+{
+    "id":38,
+    "name":"Laminated Pouches",
+    "recyclable":false,
+    "description":"Food and drink pouches, for things like coffee, pet food and baby food can’t be recycled at home.",
+    "link":"https://londonrecycles.co.uk/a-to-z/food-drink-pouches/"
+},
+{
+    "id":39,
+    "name":"Milk Cartons",
+    "recyclable":true,
+    "description":"Food and drink cartons, such as for soup, orange juice and long-life milk are widely recycled!",
+    "link":"https://londonrecycles.co.uk/a-to-z/food-drink-pouches/"
+},
+{
+    "id":40,
+    "name":"Pizza Boxes",
+    "recyclable":true,
+    "description":"Cardboard can be recycled but card that is greasy or contaminated with food (like really oily pizza boxes) can’t be, so make sure it's pretty clean!",
+    "link":"https://londonrecycles.co.uk/a-to-z/cardboard/"
+},
+{
+    "id":41,
+    "name":"Plastic Straws",
+    "recyclable":false,
+    "description":"Plastic straws can’t be recycled and should go in your rubbish bin. If you’d like to reduce your waste, you could avoid using single-use straws or invest in a reusable straw.",
+    "link":"https://londonrecycles.co.uk/a-to-z/plastic-straws/"
+},
+{
+    "id":42,
+    "name":"Toothpaste Tubes",
+    "recyclable":false,
+    "description":"Squeezy toothpaste tubes can’t be recycled from home. This is because they are made from laminated layers of foil and plastic which are very difficult to separate for recycling. However, Terracycle (who specialise in hard-to-recycle items) and Colgate run a free oral care recycling programme with public drop-off points across the UK.",
+    "link":"https://londonrecycles.co.uk/a-to-z/plastic-straws/"
+},
+{
+    "id":43,
+    "name":"Wine Bottles",
+    "recyclable":true,
+    "description":"Glass items like bottles and jars are widely recycled. They don’t need to be spotlessly clean; a quick rinse is fine. This is because liquids and bits of food ruin your recycling. Put lids back on.",
+    "link":"https://londonrecycles.co.uk/a-to-z/glass-bottles-jars/"
 },
 
 ];

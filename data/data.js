@@ -95,8 +95,8 @@ data = [
     "id":13,
     "name":"Cotton Buds",
     "recyclable":false,
-    "description":"Cotton pads can't be recycled and should go in your rubbish bin.",
-    "link":"https://londonrecycles.co.uk/a-to-z/cotton-pads/"
+    "description":"Cotton buds made with plastic stems can’t be recycled and should go in your rubbish bin. A more sustainable solution is to buy cotton buds made with paper or bamboo stems. These still can’t be recycled, but they are made from more sustainable materials, and if they do escape into the environment, will biodegrade much faster and cause far less damage than plastic ones.",
+    "link":"https://londonrecycles.co.uk/a-to-z/cotton-buds/"
 },
 {
     "id":14,
@@ -201,6 +201,7 @@ data = [
     "name":"Foil Trays",
     "recyclable":true,
     "description":"Clean aluminium trays and foil are widely recycled, provided you rinse off any food residue.",
+    "description":"Clean aluminium trays and foil are widely recycled.",
     "link":"https://londonrecycles.co.uk/a-to-z/aluminium-and-foil/"
 },
 {

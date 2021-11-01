@@ -42,6 +42,8 @@ let last_card = `
         <div class="demo__card__top bg">Congratulations! You've finished!<p role="img" aria-label="celebration" style="font-size: 5em">&#x1F389</p>
         <button onclick="resetGame()">Play again!</button>
         </div>
+        <div class="demo__card__btm">
+        </div>
     </div>
 `
 

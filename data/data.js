@@ -213,7 +213,7 @@ data = [
 },
 {
     "id":31,
-    "name":"Bin bags",
+    "name":"Bin Bags",
     "recyclable":false,
     "description":"Most black plastic packaging is coloured using carbon black pigments, which the optical sorting systems in plastics recycling plants can’t pick up. This means anything made out of black plastic usually ends up as residue and is sent to landfill or incinerated instead. It’s best not to buy any black plastic products or anything that comes in black plastic packaging.   Black bin bags can’t be recycled, so don’t put them in your recycling bin. If you put your recycling into a black bag, the bin crews will throw the entire bag into the rubbish, even if you leave the bag open.",
     "link":"https://londonrecycles.co.uk/a-to-z/black-plastic/"

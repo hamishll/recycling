@@ -46,9 +46,16 @@ let last_card = `
         </div>
     </div>
 `
-
-
+let first_card = `
+    <div class="demo__card">
+        <div class="demo__card__top bg">Can I recycle it?<p style="font-size: 0.7em; font-weight: normal">Think you know your recyclables? <br /><br />Put your knowledge to the test with our game!<br /><br />Swipe right if you think you can put the item in your recycling bin at home!</p>
+        <button onclick="resetGame()">Play!</button>
+        </div>
+        <div class="demo__card__btm opaque">
+        </div>
+    </div>
+`
 data = shuffle(data);
 data.forEach(item => renderCard(item));
-frame.innerHTML = last_card + game_html;
+frame.innerHTML = last_card + game_html + first_card;
 

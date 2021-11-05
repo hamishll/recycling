@@ -24,16 +24,24 @@ $(document).ready(function() {
 
   function release() {
     
+    // IF THEY ANSWER CORRECTLY THAT IT'S RECYCLABLE
     if ( (pullDeltaX >= decisionVal && ($card.attr("recyclable")==="true"))) {
       $card.addClass("to-right");
+      $card.find('.demo__card__btm').find('.demo__card__text').css("opacity",0);
       $card.find('.demo__card__top').css("border-color","green");
+      $("body").css('background-color','#dfffe4');
+      setTimeout(function() {$("body").css('background-color','#dfe6ff');},300);
       //console.log("Item is recyclable, moving to right");
       correct = true;
       score++;
     } 
+    // IF THEY ANSWER CORRECTLY THAT IT'S NOT RECYCLABLE
     else if (pullDeltaX <= -decisionVal && ($card.attr("recyclable")==="false")) {
       $card.addClass("to-left");
+      $card.find('.demo__card__btm').find('.demo__card__text').css("opacity",0);
       $card.find('.demo__card__top').css("border-color","green");
+      $("body").css('background-color','#dfffe4');
+      setTimeout(function() {$("body").css('background-color','#dfe6ff');},300);
       correct = true;
       score++;
       //console.log("Item is not recyclable, moving to left");
@@ -52,16 +60,21 @@ $(document).ready(function() {
         }
       }, 300);
     }
+    // IF THEY ANSWER INCORRECTLY
+    // SHOW TIP IF THEY GET IT WRONG
     if (!(correct) && Math.abs(pullDeltaX) > decisionVal) {
       $card.find('.demo__card__top').css("border-color","red");
-    }
-    correct = false;
-    document.getElementById("score").innerText = "Score: "+score+" / "+(cardsCounter+1);
-
-    if (Math.abs(pullDeltaX) < decisionVal || !(correct)) {
-      $card.addClass("reset");
       $card.find('.demo__card__btm').find('.demo__card__text').css("opacity",1);
     }
+    
+    document.getElementById("score").innerText = "Score: "+score+" / "+(cardsCounter+1);
+
+  
+    if (Math.abs(pullDeltaX) > decisionVal || !(correct)) {
+      $card.addClass("reset");
+ 
+    }
+  
 
     setTimeout(function() {
       $card.attr("style", "").removeClass("reset")
@@ -70,6 +83,9 @@ $(document).ready(function() {
       pullDeltaX = 0;
       animating = false;
     }, 300);
+
+    // RESET CORRECT
+    correct = false;
   };
 
   $(document).on("mousedown touchstart", ".demo__card:not(.inactive)", function(e) {
@@ -98,9 +114,11 @@ $(document).ready(function() {
 
 function resetGame() {
   $(".demo__card").removeClass("below");
+  $(".demo__card:last").addClass("below");
+  console.log($(".demo__card:last"));
   score = 0;
   cardsCounter = 0;
   document.getElementById("score").innerText = "Score: "+score+" / "+(cardsCounter);
   $(".demo__card__top").css("border-color","#EEE");
-  $(".demo__card__btm").css("opacity","0");
+  $(".demo__card__text").css("opacity","0");
 }

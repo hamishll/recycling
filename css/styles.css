@@ -9,7 +9,7 @@ html, body {
 }
 body {
   background: #dfe6ff;
-  overflow-x: hidden;
+  overflow: hidden;
   display: flex;
   transition: 0.1s;
   justify-content: center;
